@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan outlining the complete step-by-step procedure to export the Maison Vell project from Google AI Studio to GitHub, clone it into VS Code, configure dependencies and environment settings, and run the development server locally.",
+  "updatedAt":  "2026-11-02T07:19:36.289207776Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
