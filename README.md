@@ -1,69 +1,52 @@
 # Maison Vell — Runway Depth Lookbook
 
-An editorial, full-viewport fashion lookbook where six looks stand in a receding perspective line into a blurred distance. Dragging, scrolling, or pressing the arrow keys moves the line forward in real time with synchronized product catalog rails and rolling counters.
+An editorial, full-viewport fashion lookbook. Drag, scroll, or use the arrow keys to move through the runway, with synchronized product cards and a cart counter.
 
----
+## Requirements
 
-## Getting Started in VS Code
+- Node.js 20.19 or newer (required by Vite 8)
+- npm (included with Node.js)
 
-### 1. Prerequisites
-- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
-- [npm](https://www.npmjs.com/) (bundled with Node.js)
-- [Visual Studio Code](https://code.visualstudio.com/)
+## Run locally
 
-### 2. Quick Setup
+Open a terminal in the project folder (the folder containing `package.json`) and run:
 
-1. **Open the repository in VS Code**:
-   ```bash
-   git clone <YOUR_GITHUB_REPO_URL>
-   cd maison-vell
-   code .
-   ```
-
-2. **Open the Integrated Terminal in VS Code**:
-   - Press `Ctrl + ~` (Windows/Linux) or `Cmd + ~` (macOS).
-
-3. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-4. **Start the local development server**:
-   ```bash
-   npm run dev
-   ```
-
-5. **View in browser**:
-   - Open [http://localhost:3000](http://localhost:3000) (or click the terminal link).
-
----
-
-## Project Structure
-
-```
-├── index.html         # Main application markup, responsive styling, and vanilla physics script
-├── vite.config.ts     # Vite configuration (port 3000 dev server, Tailwind)
-├── package.json       # Project dependencies and script commands
-├── metadata.json      # AI Studio metadata and permissions
-├── src/               # React / TypeScript support entry points
-└── tsconfig.json      # TypeScript compiler configuration
+```bash
+npm install
+npm run dev
 ```
 
----
+Open the URL printed by Vite. The development server is configured for [http://localhost:3000](http://localhost:3000).
 
-## Available Scripts
+To make and preview a production build:
 
-- `npm run dev`: Starts the local development server on `http://localhost:3000`.
-- `npm run build`: Compiles and bundles the application for production into `dist/`.
-- `npm run preview`: Locally previews the production build.
-- `npm run lint`: Validates TypeScript types across the codebase.
+```bash
+npm run build
+npm run preview
+```
 
----
+## Project structure
 
-## Core Features & Controls
+```text
+index.html       Main lookbook markup, styles, and interactions
+vite.config.ts   Vite, React, and Tailwind plugin configuration
+package.json     Dependencies and npm scripts
+src/             React starter files (not used by the current HTML lookbook)
+metadata.json    AI Studio metadata
+tsconfig.json    TypeScript configuration
+```
 
-- **Drag / Swipe**: Click and drag horizontally across the stage to pull looks forward or push them back.
-- **Scroll Wheel**: Smooth wheel scrubbing with automatic look snapping.
-- **Keyboard Navigation**: Use `ArrowRight` / `ArrowDown` to advance to the next look, or `ArrowLeft` / `ArrowUp` to return to the previous look.
-- **Click to Focus**: Click on any model standing in the line to jump directly to that look.
-- **Product Rail Interaction**: Wishlist heart toggling and add-to-cart counter integration.
+## Available scripts
+
+- `npm run dev` — Start the local development server on port 3000.
+- `npm run build` — Compile the production site into `dist/`.
+- `npm run preview` — Serve the production build locally.
+- `npm run lint` — Check TypeScript files with `tsc --noEmit`.
+
+## Controls
+
+- Drag or swipe across the runway to move between looks.
+- Scroll to scrub through the collection; movement snaps to a look when scrolling stops.
+- Use the arrow keys to move between looks.
+- Click a model to focus that look.
+- Use the heart and plus buttons on product cards to save items and update the cart count.
