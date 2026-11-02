@@ -49,4 +49,6 @@ tsconfig.json    TypeScript configuration
 - Scroll to scrub through the collection; movement snaps to a look when scrolling stops.
 - Use the arrow keys to move between looks.
 - Click a model to focus that look.
-- Use the heart and plus buttons on product cards to save items and update the cart count.
+- Use the heart buttons to save pieces, the plus buttons to add them to your bag, and “Shop the look” to add both pieces from the current look.
+- Use Search, Saved, and Cart in the header to search the catalog and review saved or bagged pieces. Those lists persist in this browser.
+- Header sections open collection information panels. Account sign-in and checkout need a backend and are not connected in this front-end demo.
